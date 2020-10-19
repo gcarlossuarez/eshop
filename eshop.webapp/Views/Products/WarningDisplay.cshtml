@@ -1,0 +1,26 @@
+﻿@model string
+
+@{
+    ViewData["Title"] = "Warning";
+}
+
+<h1>Warning</h1>
+
+<h3>ALL IS OK BUT THERE'S A WARNING</h3>
+
+<div>
+    <h4>Description</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @foreach (var l_WarningDescription in Model)
+            {
+                @Html.DisplayFor(modelItem => l_WarningDescription)
+            }
+        </dt>
+    </dl>
+
+    <form asp-action="Warning">
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

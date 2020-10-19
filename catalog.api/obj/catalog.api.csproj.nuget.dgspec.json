@@ -1,28 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\apedrozo\\source\\repos\\apg\\interviews\\eshop\\catalog.api\\catalog.api.csproj": {}
+    "C:\\Users\\German Suarez\\Documents\\GitHub\\eshop\\catalog.api\\catalog.api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\apedrozo\\source\\repos\\apg\\interviews\\eshop\\catalog.api\\catalog.api.csproj": {
+    "C:\\Users\\German Suarez\\Documents\\GitHub\\eshop\\catalog.api\\catalog.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apedrozo\\source\\repos\\apg\\interviews\\eshop\\catalog.api\\catalog.api.csproj",
+        "projectUniqueName": "C:\\Users\\German Suarez\\Documents\\GitHub\\eshop\\catalog.api\\catalog.api.csproj",
         "projectName": "catalog.api",
-        "projectPath": "C:\\Users\\apedrozo\\source\\repos\\apg\\interviews\\eshop\\catalog.api\\catalog.api.csproj",
-        "packagesPath": "C:\\Users\\apedrozo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apedrozo\\source\\repos\\apg\\interviews\\eshop\\catalog.api\\obj\\",
+        "projectPath": "C:\\Users\\German Suarez\\Documents\\GitHub\\eshop\\catalog.api\\catalog.api.csproj",
+        "packagesPath": "C:\\Users\\German Suarez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\German Suarez\\Documents\\GitHub\\eshop\\catalog.api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\apedrozo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\German Suarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://tfs.apg.local/COMFIAR_2/_packaging/APG.Comfiar.Feed/nuget/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +41,22 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "microsoft.entityframeworkcore.sqlserver": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "microsoft.entityframeworkcore.sqlserver.design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
+            "microsoft.entityframeworkcore.tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -56,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<div class="text-center">
+    <h1 class="display-4">BIENVENIDO AL CATÁLOGO DE PRODUCTOS DE 'ESHOP'</h1>
+
+</div>
+@*
+
+    @model IEnumerable<catalog.api.Models.Product>
+
+    <table class="table table-hover">
+        <tr>
+            <th>
+                ID.PRODUCT
+            </th>
+            <th>
+                DESCRIPTION
+            </th>
+            <th>
+                BRAND
+            </th>
+            <th>
+                MODEL
+            </th>
+            <th>
+                UNIT PRICE
+            </th>
+            <th>
+                DISCOUNT PERCENTAGE
+            </th>
+            <th>
+                STATUS
+            </th>
+        </tr>
+
+        @foreach (var l_CProduct in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => l_CProduct.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => l_CProduct.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => l_CProduct.Brand)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => l_CProduct.Model)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => l_CProduct.UnitPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => l_CProduct.DiscountPercentage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => l_CProduct.ProductStatus)
+                <td>
+                   @Html.ActionLink("Edit", "../Products/Edit", new { p_IdProducto = l_CProduct.Id })
+                </td>
+
+            </tr>
+
+        }
+    </table>
+
+*@

@@ -1,0 +1,26 @@
+﻿@model eshop.webapp.CGeneratedError
+
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1>Error</h1>
+
+<h3>THERE WAS A SMALL ERROR</h3>
+
+<div>
+    <h4>Description</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @foreach (var l_ErrorDescription in Model.Description)
+            {
+                @Html.DisplayFor(modelItem => l_ErrorDescription) 
+            }
+        </dt>
+    </dl>
+
+    <form asp-action="Error">
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
