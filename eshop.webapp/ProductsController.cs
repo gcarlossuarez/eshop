@@ -96,6 +96,7 @@ namespace eshop.webapp
             var l_CProduct = _context.Product.OrderByDescending(u => u.Id).FirstOrDefault();
             if (l_CProduct == null)
             {
+                l_CProduct = new Product();
                 l_CProduct.Id = 1;
             }
             else
